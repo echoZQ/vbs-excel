@@ -58,7 +58,7 @@ End If
 Set objCsvSrcFile= objFs.OpenTextFile(srcFile, ForReading)
 Do Until objCsvSrcFile.AtEndOfStream
 strSrc = objCsvSrcFile.ReadLine
-	If firstStrFlag=true And strSrc="¿¨ºÅ" Then
+	If firstStrFlag=true And strSrc="卡号" Then
 		index = 7
 	End If
 	readOriginFile strSrc
